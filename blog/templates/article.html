@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content%}
+
+    <div>
+        <h2>
+            {{ article.title }}
+        </h2>
+        <h4> By: {{article.author}}</h4>
+        <p>{{ article.body|linebreaksbr }}</p>
+        <p>{{ article.published_date}}</p>
+    </div>
+
+{% endblock %}
