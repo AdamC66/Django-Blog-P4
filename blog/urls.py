@@ -21,5 +21,6 @@ urlpatterns = [
     path('', views.root),
     path('admin/', admin.site.urls),
     path('article/<int:id>', views.article, name='full_article'),
+    path('comments/new', views.create_comment, name='create_comment'),
     path('home/', views.home),
 ]
